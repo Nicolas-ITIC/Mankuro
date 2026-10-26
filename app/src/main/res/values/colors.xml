@@ -8,12 +8,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="mankuro_primary">#6366F1</color>
-    <color name="mankuro_secondary">#8B5CF6</color>
+    <color name="mankuro_primary">#8B5CF6</color>
+    <color name="mankuro_secondary">#A78BFA</color>
     <color name="mankuro_accent">#EC4899</color>
-    <color name="mankuro_background">#F8FAFC</color>
-    <color name="mankuro_surface">#FFFFFF</color>
-    <color name="mankuro_text">#0F172A</color>
-    <color name="mankuro_text_secondary">#64748B</color>
+
+    <color name="mankuro_background">#0B0714</color>
+    <color name="mankuro_surface">#171124</color>
+    <color name="mankuro_surface_variant">#251A3A</color>
+
+    <color name="mankuro_text">#F8FAFC</color>
+    <color name="mankuro_text_secondary">#B6AFC9</color>
+    <color name="mankuro_text_on_primary">#FFFFFF</color>
+
+    <color name="mankuro_border">#38294F</color>
 
 </resources>

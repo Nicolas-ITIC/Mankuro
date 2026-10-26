@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Mankuro.logInActivity"
     android:background="@color/mankuro_background"
-    android:layout_margin="20dp">
+    >
 
     <TextView
         android:id="@+id/loginText"
@@ -39,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
+        android:layout_marginTop="20dp"
         android:textSize="20dp"
         android:textColor="@color/mankuro_text"
         app:layout_constraintStart_toStartOf="match_parent"
@@ -70,14 +71,37 @@
         android:id="@+id/textPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="Password"
+        android:layout_marginTop="20dp"
         android:textSize="20dp"
         android:textColor="@color/mankuro_text"
         app:layout_constraintStart_toStartOf="match_parent"
         app:layout_constraintStart_toEndOf="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/loginIcon"
+        app:layout_constraintTop_toBottomOf="@id/tilEmail"
         >
     </TextView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Contraseña"
+        app:helperText="Obligatorio"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

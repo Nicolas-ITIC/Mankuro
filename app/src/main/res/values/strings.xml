@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">Mankuro</string>
+
+    <!-- GENERALES -->
+
+
+    <string name="app_name">Mankuro</string>
+
+
+    <!-- MAIN PAGE -->
+
+    <!-- Cabecera -->
+    <string name="three_bars">☰</string>
+    <string name="three_bars_desc">Abrir menú</string>
+    <string name="log_out">Cerrar sesión</string>
+    <!-- Saludo -->
+
+    <string name="hello">¡Hola!</string>
+    <string name="welcome">Bienvenido a Mankuro</string>
+
+    <!-- Navegación inferior -->
+    <string name="nav_library">Biblioteca</string>
+    <string name="nav_explore">Explorar</string>
+    <string name="nav_community">Comunidad</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <!-- Descripciones accesibles -->
+    <string name="nav_library_desc">Abrir biblioteca</string>
+    <string name="nav_explore_desc">Explorar mangas</string>
+    <string name="nav_community_desc">Abrir comunidad</string>
+    <string name="nav_profile_desc">Abrir perfil</string>
+    <string name="nav_settings_desc">Abrir configuración</string>
+
+
+    <!-- Contents descriptions -->
+
 </resources>

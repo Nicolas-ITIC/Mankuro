@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mankuro.logInActivity"
+    android:background="@color/mankuro_background"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        android:text="Iniciar Sesión"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        android:textColor="@color/mankuro_text">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/loginIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/account_circle_24dp_6366f1_fill0_wght400_grad0_opsz24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginText"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="20dp"
+        android:textColor="@color/mankuro_text"
+        app:layout_constraintStart_toStartOf="match_parent"
+        app:layout_constraintStart_toEndOf="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/loginIcon"
+        >
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Email"
+        app:helperText="Obligatorio"
+        app:layout_constraintTop_toBottomOf="@id/textEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="20dp"
+        android:textColor="@color/mankuro_text"
+        app:layout_constraintStart_toStartOf="match_parent"
+        app:layout_constraintStart_toEndOf="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/loginIcon"
+        >
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

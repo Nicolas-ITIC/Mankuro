@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="mankuro_primary">#6366F1</color>
+    <color name="mankuro_secondary">#8B5CF6</color>
+    <color name="mankuro_accent">#EC4899</color>
+    <color name="mankuro_background">#F8FAFC</color>
+    <color name="mankuro_surface">#FFFFFF</color>
+    <color name="mankuro_text">#0F172A</color>
+    <color name="mankuro_text_secondary">#64748B</color>
+
 </resources>

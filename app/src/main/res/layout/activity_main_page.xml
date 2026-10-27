@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/btnMenu"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/three_bars"
             android:contentDescription="@string/three_bars"
             android:tint="@color/mankuro_text"
@@ -33,8 +33,8 @@
         <!-- Boton para cerrar sesion -->
         <ImageView
             android:id="@+id/btnLogout"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/logout"
             android:contentDescription="@string/log_out"
             android:tint="@color/mankuro_text"
@@ -90,7 +90,8 @@
         android:gravity="center"
         android:background="@color/mankuro_surface"
         android:elevation="8dp"
-        android:paddingHorizontal="4dp">
+        android:paddingHorizontal="4dp"
+        android:baselineAligned="false">
 
         <!-- BIBLIOTECA -->
         <LinearLayout
@@ -101,8 +102,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_library_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnLibrary"
@@ -133,8 +133,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_explore_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnSearch"
@@ -165,8 +164,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_community_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnCommunity"
@@ -197,8 +195,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_profile_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnProfile"
@@ -229,8 +226,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_settings_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnSettings"

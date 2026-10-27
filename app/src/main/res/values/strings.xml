@@ -1,12 +1,8 @@
 <resources>
-    <string name="app_name">Mankuro</string>
-
     <!-- GENERALES -->
 
-
     <string name="app_name">Mankuro</string>
-
-
+    <string name="arrow_back">Ir atrás</string>
     <!-- MAIN PAGE -->
 
     <!-- Cabecera -->
@@ -31,6 +27,89 @@
     <string name="nav_community_desc">Abrir comunidad</string>
     <string name="nav_profile_desc">Abrir perfil</string>
     <string name="nav_settings_desc">Abrir configuración</string>
+
+    <!-- Library -->
+    <string name="library_title">Biblioteca</string>
+    <string name="library_filters">Filtros biblioteca</string>
+
+    <!-- Book detail -->
+
+    <string name="detail_back">Volver</string>
+    <string name="detail_cover_desc">Portada de la obra</string>
+
+    <string name="detail_sample_title">Solo Leveling</string>
+    <string name="detail_my_status">Mi estado</string>
+    <string name="detail_my_rating">Mi puntuación</string>
+    <string name="detail_my_chapters">Capítulos leídos</string>
+    <string name="detail_chapters_hint">Ej. 25</string>
+
+    <string name="detail_global_score">Score global</string>
+    <string name="detail_sample_score">9,2</string>
+    <string name="detail_sample_position">#3</string>
+    <string name="detail_sample_total_scores">1563 puntuaciones</string>
+
+    <string name="detail_work_type_label">Tipo</string>
+    <string name="detail_sample_type">Manhwa</string>
+    <string name="detail_publication_status_label">Publicación</string>
+    <string name="detail_sample_publication_status">Finalizado</string>
+
+    <string name="detail_genres_label">Géneros</string>
+    <string name="detail_sample_genres">Acción · Aventura · Fantasía · Isekai</string>
+
+    <string name="detail_popularity_label">Popularidad</string>
+    <string name="detail_sample_popularity">#11 por número de puntuaciones</string>
+
+    <string name="detail_author_label">Autor</string>
+    <string name="detail_sample_author">Chugong</string>
+
+    <string name="detail_summary_label">Resumen</string>
+    <string name="detail_sample_summary">Un cazador considerado el más débil comienza a descubrir un poder extraordinario que cambiará su destino.</string>
+
+    <!-- Search -->
+    <string name="explore_title">Explorar</string>
+    <string name="explore_back">Volver</string>
+
+    <string name="explore_manga">Manga</string>
+    <string name="explore_manhwa">Manhwa</string>
+    <string name="explore_both">Manga + Manhwa</string>
+
+    <!-- Search 2 -->
+
+    <string name="explore_top_scores">Top puntuaciones</string>
+    <string name="explore_top_popularity">Top popularidad</string>
+    <string name="explore_recommended">Recomendados</string>
+    <string name="explore_genres">Géneros</string>
+    <string name="explore_ongoing">Saliendo</string>
+
+    <!-- Search 3 -->
+
+    <string name="explore_results_breadcrumb">Manga &gt; Top puntuaciones</string>
+
+    <string name="explore_sample_title">Título de ejemplo</string>
+    <string name="explore_sample_type">Manga</string>
+    <string name="explore_sample_progress">Capítulos: 120</string>
+    <string name="explore_score_label">Score</string>
+    <string name="explore_sample_score">9,8</string>
+
+    <!-- Community -->
+
+    <string name="community_title">Comunidad</string>
+    <string name="community_back">Volver atrás</string>
+    <string name="community_search">Buscar publicaciones</string>
+
+    <string name="community_following">Siguiendo</string>
+    <string name="community_for_you">Para ti</string>
+
+    <string name="community_create_post">Crear publicación</string>
+
+    <string name="community_sample_author">MangaFan23</string>
+    <string name="community_sample_description">¡Acabo de terminar este manhwa! La historia y el dibujo son increíbles. ¿Qué os parece?</string>
+    <string name="community_post_image_desc">Imagen de la publicación</string>
+
+    <string name="community_like">Me gusta</string>
+    <string name="community_comments">Comentarios</string>
+    <string name="community_sample_likes">128</string>
+    <string name="community_sample_comments">24</string>
 
 
     <!-- Contents descriptions -->

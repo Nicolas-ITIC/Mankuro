@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mankuro_background"
+    android:padding="16dp">
+
+    <!-- Cabecera: título centrado y flecha a la derecha -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvExploreTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/explore_title"
+            android:textColor="@color/mankuro_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnExploreBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/arrow_back"
+            android:contentDescription="@string/explore_back"
+            android:tint="@color/mankuro_text"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+    <!-- Opciones de exploración -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/btnExploreManga"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/explore_manga"
+            android:textColor="@color/mankuro_text"
+            android:textSize="16sp"
+            android:backgroundTint="@color/mankuro_surface_variant"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btnExploreManhwa"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/explore_manhwa"
+            android:textColor="@color/mankuro_text"
+            android:textSize="16sp"
+            android:backgroundTint="@color/mankuro_surface_variant"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btnExploreBoth"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/explore_both"
+            android:textColor="@color/mankuro_text"
+            android:textSize="16sp"
+            android:backgroundTint="@color/mankuro_primary"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

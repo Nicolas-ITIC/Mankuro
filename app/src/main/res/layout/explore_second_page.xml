@@ -1,0 +1,105 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mankuro_background"
+    android:padding="16dp">
+
+    <!-- Cabecera -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvExploreCategoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/explore_manga"
+            android:textColor="@color/mankuro_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <ImageView
+            android:id="@+id/btnExploreCategoryBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/arrow_back"
+            android:contentDescription="@string/explore_back"
+            android:tint="@color/mankuro_text"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+    <!-- Opciones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/btnTopScores"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/explore_top_scores"
+            android:textColor="@color/mankuro_text"
+            android:textSize="16sp"
+            android:backgroundTint="@color/mankuro_surface_variant"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btnTopPopularity"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/explore_top_popularity"
+            android:textColor="@color/mankuro_text"
+            android:textSize="16sp"
+            android:backgroundTint="@color/mankuro_surface_variant"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btnRecommended"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/explore_recommended"
+            android:textColor="@color/mankuro_text"
+            android:textSize="16sp"
+            android:backgroundTint="@color/mankuro_surface_variant"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btnGenres"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/explore_genres"
+            android:textColor="@color/mankuro_text"
+            android:textSize="16sp"
+            android:backgroundTint="@color/mankuro_surface_variant"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btnOngoing"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/explore_ongoing"
+            android:textColor="@color/mankuro_text"
+            android:textSize="16sp"
+            android:backgroundTint="@color/mankuro_primary"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

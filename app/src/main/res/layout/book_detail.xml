@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mankuro_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Cabecera -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/arrow_back"
+                android:contentDescription="@string/detail_back"
+                android:tint="@color/mankuro_text"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tvWorkTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                android:text="@string/detail_sample_title"
+                android:textColor="@color/mankuro_text"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+        </LinearLayout>
+
+        <!-- Portada e información personal editable -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/ivWorkCover"
+                android:layout_width="120dp"
+                android:layout_height="175dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:contentDescription="@string/detail_cover_desc" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_my_status"
+                    android:textColor="@color/mankuro_text_secondary"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/spWorkStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:entries="@array/work_user_statuses"
+                    android:backgroundTint="@color/mankuro_primary"
+                    android:contentDescription="@string/detail_my_status" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/detail_my_rating"
+                    android:textColor="@color/mankuro_text_secondary"
+                    android:textSize="13sp" />
+
+                <RatingBar
+                    android:id="@+id/rbUserRating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:rating="0"
+                    android:progressTint="@color/mankuro_primary"
+                    android:secondaryProgressTint="@color/mankuro_surface_variant"
+                    android:contentDescription="@string/detail_my_rating" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/detail_my_chapters"
+                    android:textColor="@color/mankuro_text_secondary"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/etUserChapters"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="@string/detail_chapters_hint"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/mankuro_text"
+                    android:textColorHint="@color/mankuro_text_secondary"
+                    android:backgroundTint="@color/mankuro_primary"
+                    android:paddingHorizontal="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Información global y tipo de obra -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp">
+
+            <!-- Tarjeta del score global -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="145dp"
+                android:layout_weight="1.15"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@color/mankuro_surface_variant">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_global_score"
+                    android:textColor="@color/mankuro_text_secondary"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:id="@+id/tvGlobalScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_sample_score"
+                        android:textColor="@color/mankuro_text"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvScorePosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/detail_sample_position"
+                        android:textColor="@color/mankuro_secondary"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTotalScores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/detail_sample_total_scores"
+                    android:textColor="@color/mankuro_text_secondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Tipo y estado de publicación -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="@color/mankuro_surface">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_work_type_label"
+                    android:textColor="@color/mankuro_text_secondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvWorkType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/detail_sample_type"
+                    android:textColor="@color/mankuro_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/detail_publication_status_label"
+                    android:textColor="@color/mankuro_text_secondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvPublicationStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/detail_sample_publication_status"
+                    android:textColor="@color/mankuro_secondary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Géneros -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_genres_label"
+            android:textColor="@color/mankuro_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGenres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:padding="12dp"
+            android:background="@color/mankuro_surface"
+            android:text="@string/detail_sample_genres"
+            android:textColor="@color/mankuro_secondary"
+            android:textSize="14sp" />
+
+        <!-- Popularidad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_popularity_label"
+            android:textColor="@color/mankuro_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPopularity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/detail_sample_popularity"
+            android:textColor="@color/mankuro_secondary"
+            android:textSize="15sp" />
+
+        <!-- Autor -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_author_label"
+            android:textColor="@color/mankuro_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/detail_sample_author"
+            android:textColor="@color/mankuro_text_secondary"
+            android:textSize="15sp" />
+
+        <!-- Resumen -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_summary_label"
+            android:textColor="@color/mankuro_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/detail_sample_summary"
+            android:textColor="@color/mankuro_text_secondary"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

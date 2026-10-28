@@ -111,6 +111,34 @@
     <string name="community_sample_likes">128</string>
     <string name="community_sample_comments">24</string>
 
+    <!-- Profile -->
+
+    <string name="profile_title">Perfil</string>
+    <string name="profile_back">Volver atrás</string>
+    <string name="profile_logout">Cerrar sesión</string>
+
+    <string name="profile_picture_desc">Imagen de perfil del usuario</string>
+    <string name="profile_sample_username">MangaFan23</string>
+
+    <string name="profile_email_label">Correo electrónico</string>
+    <string name="profile_sample_email">mangafan23@example.com</string>
+
+    <string name="profile_age_label">Edad</string>
+    <string name="profile_sample_age">22 años</string>
+
+    <string name="profile_description_label">Descripción</string>
+    <string name="profile_sample_description">Amante del manga y el manhwa. Siempre buscando nuevas historias que leer.</string>
+
+    <string name="profile_manga_read">Mangas leídos</string>
+    <string name="profile_sample_manga_count">42</string>
+
+    <string name="profile_manhwa_read">Manhwas leídos</string>
+    <string name="profile_sample_manhwa_count">28</string>
+
+    <string name="profile_average_rating">Puntuación media personal</string>
+    <string name="profile_sample_average_rating">8,6</string>
+    <string name="profile_rating_scale">Sobre 10 puntos</string>
+
 
     <!-- Contents descriptions -->
 

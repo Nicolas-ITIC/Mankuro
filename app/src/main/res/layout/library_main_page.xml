@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/mankuro_background"
+    android:background="@color/background"
     android:padding="16dp">
 
     <!-- Cabecera -->
@@ -21,7 +21,7 @@
             android:padding="12dp"
             android:src="@drawable/arrow_back"
             android:contentDescription="@string/arrow_back"
-            android:tint="@color/mankuro_text"
+            android:tint="@color/on_background"
             android:clickable="true"
             android:focusable="true" />
 
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/library_title"
-            android:textColor="@color/mankuro_text"
+            android:textColor="@color/on_background"
             android:textSize="26sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -42,7 +42,7 @@
             android:padding="12dp"
             android:src="@drawable/filter"
             android:contentDescription="@string/library_filters"
-            android:tint="@color/mankuro_text"
+            android:tint="@color/on_background"
             android:clickable="true"
             android:focusable="true" />
 

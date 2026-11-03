@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mankuro_background"
+    android:background="@color/background"
     android:fillViewport="true">
 
     <LinearLayout
@@ -29,7 +29,7 @@
                 android:contentDescription="@string/profile_back"
                 android:padding="8dp"
                 android:scaleType="centerInside"
-                android:tint="@color/mankuro_text" />
+                android:tint="@color/on_background" />
 
             <TextView
                 android:id="@+id/tvProfileTitle"
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="@string/profile_title"
-                android:textColor="@color/mankuro_text"
+                android:textColor="@color/on_background"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -70,7 +70,7 @@
                 android:id="@+id/ivProfilePicture"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@color/mankuro_surface_variant"
+                android:background="@color/on_surface_variant"
                 android:contentDescription="@string/profile_picture_desc"
                 android:padding="12dp"
                 android:scaleType="centerCrop"
@@ -83,7 +83,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
                 android:text="@string/profile_sample_username"
-                android:textColor="@color/mankuro_text"
+                android:textColor="@color/on_background"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/profile_email_label"
-                android:textColor="@color/mankuro_text_secondary"
+                android:textColor="@color/on_surface_variant"
                 android:textSize="13sp" />
 
             <TextView
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/profile_sample_email"
-                android:textColor="@color/mankuro_text"
+                android:textColor="@color/on_background"
                 android:textSize="15sp" />
 
             <View
@@ -127,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/profile_age_label"
-                android:textColor="@color/mankuro_text_secondary"
+                android:textColor="@color/on_surface_variant"
                 android:textSize="13sp" />
 
             <TextView
@@ -136,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/profile_sample_age"
-                android:textColor="@color/mankuro_text"
+                android:textColor="@color/on_background"
                 android:textSize="15sp" />
 
             <View
@@ -150,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/profile_description_label"
-                android:textColor="@color/mankuro_text_secondary"
+                android:textColor="@color/on_surface_variant"
                 android:textSize="13sp" />
 
             <TextView
@@ -159,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/profile_sample_description"
-                android:textColor="@color/mankuro_text"
+                android:textColor="@color/on_background"
                 android:textSize="15sp"
                 android:lineSpacingExtra="3dp" />
 
@@ -191,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/profile_manga_read"
-                    android:textColor="@color/mankuro_text_secondary"
+                    android:textColor="@color/on_surface_variant"
                     android:textSize="14sp" />
 
                 <TextView
@@ -201,7 +201,7 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/profile_sample_manga_count"
-                    android:textColor="@color/mankuro_primary"
+                    android:textColor="@color/primary"
                     android:textSize="28sp"
                     android:textStyle="bold" />
 
@@ -223,7 +223,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/profile_manhwa_read"
-                    android:textColor="@color/mankuro_text_secondary"
+                    android:textColor="@color/on_surface_variant"
                     android:textSize="14sp" />
 
                 <TextView
@@ -233,7 +233,7 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/profile_sample_manhwa_count"
-                    android:textColor="@color/mankuro_primary"
+                    android:textColor="@color/primary"
                     android:textSize="28sp"
                     android:textStyle="bold" />
 
@@ -258,7 +258,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/profile_average_rating"
-                android:textColor="@color/mankuro_text_secondary"
+                android:textColor="@color/on_surface_variant"
                 android:textSize="15sp" />
 
             <TextView
@@ -278,7 +278,7 @@
                 android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:text="@string/profile_rating_scale"
-                android:textColor="@color/mankuro_text_secondary"
+                android:textColor="@color/on_surface_variant"
                 android:textSize="13sp" />
 
         </LinearLayout>

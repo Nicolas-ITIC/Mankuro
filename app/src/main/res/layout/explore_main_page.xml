@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/mankuro_background"
+    android:background="@color/background"
     android:padding="16dp">
 
     <!-- Cabecera: título centrado y flecha a la derecha -->
@@ -19,7 +19,7 @@
             android:layout_centerInParent="true"
             android:gravity="center"
             android:text="@string/explore_title"
-            android:textColor="@color/mankuro_text"
+            android:textColor="@color/on_background"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -30,7 +30,7 @@
             android:padding="12dp"
             android:src="@drawable/arrow_back"
             android:contentDescription="@string/explore_back"
-            android:tint="@color/mankuro_text"
+            android:tint="@color/on_background"
             android:clickable="true"
             android:focusable="true" />
 
@@ -49,9 +49,9 @@
             android:layout_height="64dp"
             android:layout_marginBottom="16dp"
             android:text="@string/explore_manga"
-            android:textColor="@color/mankuro_text"
+            android:textColor="@color/on_background"
             android:textSize="16sp"
-            android:backgroundTint="@color/mankuro_surface_variant"
+            android:backgroundTint="@color/primary"
             android:stateListAnimator="@null" />
 
         <Button
@@ -60,9 +60,9 @@
             android:layout_height="64dp"
             android:layout_marginBottom="16dp"
             android:text="@string/explore_manhwa"
-            android:textColor="@color/mankuro_text"
+            android:textColor="@color/on_background"
             android:textSize="16sp"
-            android:backgroundTint="@color/mankuro_surface_variant"
+            android:backgroundTint="@color/primary"
             android:stateListAnimator="@null" />
 
         <Button
@@ -70,9 +70,9 @@
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:text="@string/explore_both"
-            android:textColor="@color/mankuro_text"
+            android:textColor="@color/on_background"
             android:textSize="16sp"
-            android:backgroundTint="@color/mankuro_primary"
+            android:backgroundTint="@color/primary"
             android:stateListAnimator="@null" />
 
     </LinearLayout>

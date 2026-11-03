@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -7,7 +6,7 @@
     android:orientation="horizontal"
     android:gravity="center_vertical"
     android:padding="10dp"
-    android:background="@color/mankuro_surface">
+    android:background="@color/surface">
 
     <!-- Portada -->
     <ImageView
@@ -31,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/explore_sample_title"
-            android:textColor="@color/mankuro_text"
+            android:textColor="@color/on_background"
             android:textSize="16sp"
             android:textStyle="bold"
             android:maxLines="2"
@@ -43,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="@string/explore_sample_type"
-            android:textColor="@color/mankuro_text_secondary"
+            android:textColor="@color/on_surface_variant"
             android:textSize="12sp" />
 
         <TextView
@@ -52,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/explore_sample_progress"
-            android:textColor="@color/mankuro_primary"
+            android:textColor="@color/primary"
             android:textSize="13sp" />
 
     </LinearLayout>
@@ -68,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/explore_score_label"
-            android:textColor="@color/mankuro_text_secondary"
+            android:textColor="@color/on_surface_variant"
             android:textSize="11sp" />
 
         <TextView
@@ -77,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="@string/explore_sample_score"
-            android:textColor="@color/mankuro_secondary"
+            android:textColor="@color/secondary"
             android:textSize="16sp"
             android:textStyle="bold" />
 

@@ -1,10 +1,9 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/mankuro_background"
+    android:background="@color/background"
     android:padding="16dp">
 
     <!-- Cabecera con flecha y ruta de navegación -->
@@ -21,7 +20,7 @@
             android:padding="12dp"
             android:src="@drawable/arrow_back"
             android:contentDescription="@string/explore_back"
-            android:tint="@color/mankuro_text" />
+            android:tint="@color/on_background" />
 
         <TextView
             android:id="@+id/tvExploreResultsTitle"
@@ -31,7 +30,7 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="8dp"
             android:text="@string/explore_results_breadcrumb"
-            android:textColor="@color/mankuro_text"
+            android:textColor="@color/on_background"
             android:textSize="20sp"
             android:textStyle="bold"
             android:maxLines="2"

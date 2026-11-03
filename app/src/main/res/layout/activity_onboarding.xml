@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/mankuro_background">
 
+    <!-- Botón Saltar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSkip"
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -39,36 +40,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabIndicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="20dp"
-                android:layout_height="6dp"
-                android:background="@drawable/bg_dot_active" />
-
-            <View
-                android:layout_width="6dp"
-                android:layout_height="6dp"
-                android:layout_marginStart="8dp"
-                android:background="@drawable/bg_dot_inactive" />
-
-            <View
-                android:layout_width="6dp"
-                android:layout_height="6dp"
-                android:layout_marginStart="8dp"
-                android:background="@drawable/bg_dot_inactive" />
-
-        </LinearLayout>
+            android:background="@android:color/transparent"
+            app:tabBackground="@drawable/selector_onboarding_dot"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabRippleColor="@android:color/transparent" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="54dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:text="Siguiente"
             android:textColor="@color/mankuro_text_on_primary"
             android:textSize="16sp"

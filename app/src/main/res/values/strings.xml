@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Mankuro</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="settingsText">Ajustes</string>
+    <string name="perfil">PERFIL</string>
+    <string name="mankurouser">MankuroUser</string>
+    <string name="usuario_mankuro_com">usuario@mankuro.com</string>
+    <string name="preferencias">PREFERENCIAS</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="tema_oscuro">Tema oscuro</string>
+    <string name="permitir_contenido_nsfw_18">Permitir contenido NSFW (+18)</string>
+    <string name="idioma">Idioma</string>
+    <string name="espa_ol">Español ›</string>
+    <string name="informacion">INFORMACIÓN</string>
+    <string name="version">Versión de la app</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="mascota_chibi">Mascota chibi</string>
 </resources>

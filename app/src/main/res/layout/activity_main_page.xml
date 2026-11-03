@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/mankuro_background">
+    android:background="@color/background">
 
     <!-- CABECERA SUPERIOR -->
     <LinearLayout
@@ -12,15 +12,15 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:paddingHorizontal="16dp"
-        android:background="@color/mankuro_surface">
+        android:background="@color/surface">
 
         <ImageView
             android:id="@+id/btnMenu"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/three_bars"
             android:contentDescription="@string/three_bars"
-            android:tint="@color/mankuro_text"
+            android:tint="@color/on_background"
             android:clickable="true"
             android:focusable="true"
             android:padding="2dp" />
@@ -33,11 +33,11 @@
         <!-- Boton para cerrar sesion -->
         <ImageView
             android:id="@+id/btnLogout"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/logout"
             android:contentDescription="@string/log_out"
-            android:tint="@color/mankuro_text"
+            android:tint="@color/on_background"
             android:clickable="true"
             android:focusable="true"
             android:padding="2dp" />
@@ -52,14 +52,14 @@
         android:gravity="center"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
-        android:background="@color/mankuro_surface">
+        android:background="@color/surface">
 
         <TextView
             android:id="@+id/txtGreeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hello"
-            android:textColor="@color/mankuro_text"
+            android:textColor="@color/on_background"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/welcome"
-            android:textColor="@color/mankuro_text_secondary"
+            android:textColor="@color/on_surface_variant"
             android:textSize="15sp"
             android:layout_marginTop="4dp" />
 
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/mankuro_background" />
+        android:background="@color/background" />
 
     <!-- BARRA DE NAVEGACION INFERIOR -->
     <LinearLayout
@@ -88,9 +88,10 @@
         android:layout_height="68dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:background="@color/mankuro_surface"
+        android:background="@color/surface"
         android:elevation="8dp"
-        android:paddingHorizontal="4dp">
+        android:paddingHorizontal="4dp"
+        android:baselineAligned="false">
 
         <!-- BIBLIOTECA -->
         <LinearLayout
@@ -101,8 +102,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_library_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnLibrary"
@@ -110,7 +110,7 @@
                 android:layout_height="24dp"
                 android:src="@drawable/library"
                 android:contentDescription="@string/nav_library_desc"
-                android:tint="@color/mankuro_text"
+                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="2dp" />
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/nav_library"
                 android:textSize="11sp"
-                android:textColor="@color/mankuro_primary" />
+                android:textColor="@color/primary" />
 
         </LinearLayout>
 
@@ -133,8 +133,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_explore_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnSearch"
@@ -142,7 +141,7 @@
                 android:layout_height="24dp"
                 android:src="@drawable/search"
                 android:contentDescription="@string/nav_explore_desc"
-                android:tint="@color/mankuro_text"
+                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="2dp" />
@@ -152,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/nav_explore"
                 android:textSize="11sp"
-                android:textColor="@color/mankuro_primary" />
+                android:textColor="@color/primary" />
 
         </LinearLayout>
 
@@ -165,8 +164,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_community_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnCommunity"
@@ -174,7 +172,7 @@
                 android:layout_height="24dp"
                 android:src="@drawable/community"
                 android:contentDescription="@string/nav_community_desc"
-                android:tint="@color/mankuro_text"
+                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="2dp" />
@@ -184,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/nav_community"
                 android:textSize="11sp"
-                android:textColor="@color/mankuro_primary" />
+                android:textColor="@color/primary" />
 
         </LinearLayout>
 
@@ -197,8 +195,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_profile_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnProfile"
@@ -206,7 +203,7 @@
                 android:layout_height="24dp"
                 android:src="@drawable/profile"
                 android:contentDescription="@string/nav_profile_desc"
-                android:tint="@color/mankuro_text"
+                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="2dp" />
@@ -216,7 +213,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/nav_profile"
                 android:textSize="11sp"
-                android:textColor="@color/mankuro_primary" />
+                android:textColor="@color/primary" />
 
         </LinearLayout>
 
@@ -229,8 +226,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="@string/nav_settings_desc">
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/btnSettings"
@@ -238,7 +234,7 @@
                 android:layout_height="24dp"
                 android:src="@drawable/settings"
                 android:contentDescription="@string/nav_settings_desc"
-                android:tint="@color/mankuro_text"
+                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="2dp" />
@@ -248,7 +244,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/nav_settings"
                 android:textSize="11sp"
-                android:textColor="@color/mankuro_primary" />
+                android:textColor="@color/primary" />
 
         </LinearLayout>
 

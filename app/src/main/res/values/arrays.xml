@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="work_user_statuses">
+        <item>Leyendo</item>
+        <item>Leído</item>
+        <item>En espera</item>
+        <item>Dejado</item>
+        <item>Lista de lectura</item>
+    </string-array>
+</resources>

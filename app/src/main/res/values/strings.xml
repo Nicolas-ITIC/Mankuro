@@ -15,4 +15,17 @@
     <string name="version">Versión de la app</string>
     <string name="logout">Cerrar sesión</string>
     <string name="mascota_chibi">Mascota chibi</string>
+    <string name="accesibilidad">Accesibilidad</string>
+    <string name="visi_n_y_lectura">VISIÓN Y LECTURA</string>
+    <string name="tamano_de_texto">Tamaño de texto</string>
+    <string name="ajusta_el_tamano_de_la_fuente">Ajusta el tamaño de la fuente</string>
+    <string name="volver">Volver</string>
+    <string name="destaca_bordes_y_colores">Destaca bordes y colores</string>
+    <string name="texto_de_alto_contraste">Texto de alto contraste</string>
+    <string name="interacci_n_y_movimiento">INTERACCIÓN Y MOVIMIENTO</string>
+    <string name="reducir_animaciones">Reducir animaciones</string>
+    <string name="transiciones_m_s_r_pidas_y_simples">Transiciones más rápidas y simples</string>
+    <string name="vibraci_n_al_pulsar">Vibración al pulsar</string>
+    <string name="respuesta_tactil_en_botones">Respuesta táctil en botones</string>
+    <string name="normal">Normal ›</string>
 </resources>

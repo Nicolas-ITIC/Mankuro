@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="@color/mankuro_background">
 
-    <!-- Botón Saltar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSkip"
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -45,7 +44,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            app:tabBackground="@drawable/selector_onboarding_dot"
             app:tabGravity="center"
             app:tabIndicatorHeight="0dp"
             app:tabRippleColor="@android:color/transparent" />

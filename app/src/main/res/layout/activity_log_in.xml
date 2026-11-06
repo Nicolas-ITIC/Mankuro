@@ -4,34 +4,30 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mankuro_background"
-    android:padding="24dp"
-    >
+    android:background="@color/background"
+    android:padding="24dp">
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="100dp"
+        android:src="@drawable/img_1"
         app:layout_constraintBottom_toTopOf="@id/cardLogin"
-        app:layout_constraintStart_toStartOf="@id/cardLogin"
         app:layout_constraintEnd_toEndOf="@id/cardLogin"
-
-        android:src="@drawable/img_1">
-
-    </ImageView>
+        app:layout_constraintStart_toStartOf="@id/cardLogin" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/mankuro_surface"
+        app:cardBackgroundColor="@color/surface"
         app:cardCornerRadius="24dp"
         app:cardElevation="0dp"
         app:strokeColor="@color/mankuro_border"
         app:strokeWidth="1dp"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,14 +40,9 @@
                 android:layout_height="wrap_content"
                 android:text="¡Bienvenido amigo!"
                 android:textAlignment="center"
-                android:textColor="@color/mankuro_text"
+                android:textColor="@color/on_surface"
                 android:textSize="36sp"
-                android:textStyle="bold"
-                >
-
-            </TextView>
-
-
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textEmail"
@@ -59,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Email"
-                android:textColor="@color/mankuro_text"
+                android:textColor="@color/on_surface"
                 android:textSize="15sp" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -67,18 +58,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                app:boxCornerRadiusTopStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
-                app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusBottomEnd="12dp"
-                app:boxStrokeColor="@color/mankuro_primary">
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/primary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/mankuro_text"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/on_surface" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Contraseña"
-                android:textColor="@color/mankuro_text"
+                android:textColor="@color/on_surface"
                 android:textSize="15sp" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -97,28 +88,31 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:hint="••••••••"
-                app:endIconMode="password_toggle"
-                app:boxCornerRadiusTopStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
-                app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusBottomEnd="12dp"
-                app:boxStrokeColor="@color/mankuro_primary">
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/primary"
+                app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/mankuro_text"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:textColor="@color/on_surface" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Iniciar sesión">
-            </Button>
+                android:text="Iniciar sesión"
+                android:textColor="@color/on_primary"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="12dp" />
 
         </LinearLayout>
 
@@ -127,13 +121,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿No tienes cuenta? Registrate"
         android:layout_marginTop="20dp"
+        android:text="¿No tienes cuenta? Registrate"
         android:textColor="@color/mankuro_text_secondary"
-        app:layout_constraintTop_toBottomOf="@id/cardLogin"
-        app:layout_constraintEnd_toEndOf="@id/cardLogin">
-    </TextView>
-
-
+        app:layout_constraintEnd_toEndOf="@id/cardLogin"
+        app:layout_constraintTop_toBottomOf="@id/cardLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

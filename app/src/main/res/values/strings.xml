@@ -166,6 +166,13 @@
     <string name="profile_average_rating">Puntuación media personal</string>
     <string name="profile_sample_average_rating">8,6</string>
     <string name="profile_rating_scale">Sobre 10 puntos</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="nombre">Nombre</string>
+    <string name="email">Email</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="confirmar_contrase_a">Confirmar contraseña</string>
+    <string name="crearCuenta">Crear cuenta</string>
+    <string name="ya_tienes_cuenta_inicia_sesi_n">¿Ya tienes cuenta? Inicia sesión</string>
 
 
     <!-- Contents descriptions -->

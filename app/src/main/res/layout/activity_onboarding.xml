@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mankuro_background">
+    android:background="@color/background">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSkip"
@@ -54,9 +54,9 @@
             android:layout_height="54dp"
             android:layout_marginTop="20dp"
             android:text="Siguiente"
-            android:textColor="@color/mankuro_text_on_primary"
+            android:textColor="@color/on_primary"
             android:textSize="16sp"
-            app:backgroundTint="@color/mankuro_primary"
+            app:backgroundTint="@color/primary"
             app:cornerRadius="14dp" />
 
     </LinearLayout>

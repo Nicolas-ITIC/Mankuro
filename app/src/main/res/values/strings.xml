@@ -173,6 +173,8 @@
     <string name="confirmar_contrase_a">Confirmar contraseña</string>
     <string name="crearCuenta">Crear cuenta</string>
     <string name="ya_tienes_cuenta_inicia_sesi_n">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="recuperar_contrase_a">Recuperar contraseña</string>
+    <string name="ingresa_tu_correo_y_te_enviaremos_un_enlace_para_restablecer_tu_acceso">Ingresa tu correo y te enviaremos un enlace para restablecer tu acceso.</string>
 
 
     <!-- Contents descriptions -->

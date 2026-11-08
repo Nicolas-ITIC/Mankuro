@@ -29,7 +29,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/back_accessibility"
                 android:padding="8dp"
-                android:src="@drawable/abc_ic_ab_back_material"
+                android:src="@drawable/arrow_back"
                 app:tint="@color/on_surface" />
 
             <TextView

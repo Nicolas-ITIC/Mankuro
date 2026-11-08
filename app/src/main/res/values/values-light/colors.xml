@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#7C3AED</color>
+    <color name="primary_variant">#5B21B6</color>
+    <color name="secondary">#6D28D9</color>
+    <color name="secondary_variant">#5B21B6</color>
+
+    <color name="background">#FAF7FF</color>
+    <color name="surface">#FFFFFF</color>
+
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_background">#1B1230</color>
+    <color name="on_surface">#1B1230</color>
+    <color name="on_surface_variant">#5E5675</color>
+
+    <color name="mankuro_accent">#DB2777</color>
+    <color name="mankuro_border">#E4DAF5</color>
+    <color name="mankuro_surface_variant">#F1EAFD</color>
+    <color name="mankuro_text_secondary">#5E5675</color>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- =====================================================
+         TEXTOS (se aplican con android:textAppearance)
+         ===================================================== -->
+    <style name="TextAppearance.Mankuro" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Título grande de login / registro (36sp) -->
+    <style name="TextAppearance.Mankuro.Headline">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Título de pantalla con flecha de volver: ajustes, accesibilidad (28sp) -->
+    <style name="TextAppearance.Mankuro.ScreenTitle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Título dentro de una tarjeta: recuperar contraseña, onboarding (26sp) -->
+    <style name="TextAppearance.Mankuro.CardTitle">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Cabecera de sección: PERFIL, PREFERENCIAS, INFORMACIÓN... -->
+    <style name="TextAppearance.Mankuro.SectionHeader">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <!-- Etiqueta / título de fila (15sp) -->
+    <style name="TextAppearance.Mankuro.Label">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Texto secundario: valores de fila, descripciones (14sp) -->
+    <style name="TextAppearance.Mankuro.Secondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <!-- Texto pequeño: subtítulo de una fila (12sp) -->
+    <style name="TextAppearance.Mankuro.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+
+    <!-- =====================================================
+         CAMPOS DE TEXTO (por defecto vía themes.xml: textInputStyle)
+         ===================================================== -->
+    <style name="Widget.Mankuro.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_field</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_field</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_field</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_field</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+        <item name="android:textColorHint">@color/on_surface_variant</item>
+        <item name="endIconTint">@color/on_surface_variant</item>
+    </style>
+
+
+    <!-- =====================================================
+         BOTONES
+         ===================================================== -->
+
+    <!-- Principal (relleno). Por defecto vía themes.xml: materialButtonStyle -->
+    <style name="Widget.Mankuro.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Secundario con borde: Cerrar sesión -->
+    <style name="Widget.Mankuro.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/mankuro_accent</item>
+        <item name="strokeColor">@color/mankuro_accent</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- De texto: Saltar, ¿Olvidaste tu contraseña?, ¿No tienes cuenta? -->
+    <style name="Widget.Mankuro.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/on_surface_variant</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <!-- =====================================================
+         TARJETAS
+         ===================================================== -->
+
+    <!-- Por defecto vía themes.xml: materialCardViewStyle (ajustes, accesibilidad) -->
+    <style name="Widget.Mankuro.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/mankuro_border</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+    </style>
+
+    <!-- Tarjeta grande de formularios: login, registro, recuperar contraseña -->
+    <style name="Widget.Mankuro.Card.Large">
+        <item name="cardCornerRadius">@dimen/radius_card_large</item>
+    </style>
+
+
+    <!-- =====================================================
+         FILAS DE AJUSTES (LinearLayout horizontal)
+         Usa layout_width="match_parent" y layout_height="wrap_content" en el layout
+         ===================================================== -->
+    <style name="Widget.Mankuro.SettingsRow">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">@dimen/row_min_height</item>
+        <item name="android:paddingStart">@dimen/row_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/row_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/row_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/row_padding_vertical</item>
+    </style>
+
+    <!-- Fila pulsable (Idioma, Accesibilidad): añade ripple y foco -->
+    <style name="Widget.Mankuro.SettingsRow.Clickable">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Línea separadora entre filas (layout_height="1dp" en el layout) -->
+    <style name="Widget.Mankuro.Divider">
+        <item name="android:background">@color/mankuro_border</item>
+    </style>
+
+</resources>

@@ -4,7 +4,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     android:padding="24dp">
 
     <ImageView
@@ -20,11 +19,7 @@
         android:id="@+id/cardLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/surface"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="0dp"
-        app:strokeColor="@color/mankuro_border"
-        app:strokeWidth="1dp"
+        style="@style/Widget.Mankuro.Card.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,8 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/bienvenido_amigo"
                 android:textAlignment="center"
-                android:textColor="@color/on_surface"
-                android:textSize="36sp"
+                android:textAppearance="@style/TextAppearance.Mankuro.Headline"
                 android:textStyle="bold" />
 
             <TextView
@@ -51,26 +45,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="@string/email_login"
-                android:textColor="@color/on_surface"
-                android:textSize="15sp" />
+                android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                app:boxCornerRadiusBottomEnd="12dp"
-                app:boxCornerRadiusBottomStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
-                app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/primary">
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@color/on_surface" />
+                    android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,8 +68,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/password_login"
-                android:textColor="@color/on_surface"
-                android:textSize="15sp" />
+                android:textAppearance="@style/TextAppearance.Mankuro.Label"
+                />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilPassword"
@@ -89,11 +77,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:hint="@string/hidePass"
-                app:boxCornerRadiusBottomEnd="12dp"
-                app:boxCornerRadiusBottomStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
-                app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/primary"
                 app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -101,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
-                    android:textColor="@color/on_surface" />
+                />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,10 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="@string/btn_login"
-                android:textColor="@color/on_primary"
-                app:backgroundTint="@color/primary"
-                app:cornerRadius="12dp" />
-
+             />
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -124,7 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/forgot_password"
-        android:textColor="@color/mankuro_text_secondary"
+        android:textAppearance="@style/TextAppearance.Mankuro.Secondary"
         app:layout_constraintEnd_toEndOf="@id/cardLogin"
         app:layout_constraintTop_toBottomOf="@id/cardLogin"
         />
@@ -134,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/dont_have_account"
-        android:textColor="@color/mankuro_text_secondary"
+        android:textAppearance="@style/TextAppearance.Mankuro.Secondary"
         app:layout_constraintStart_toStartOf="@id/cardLogin"
         app:layout_constraintTop_toBottomOf="@id/cardLogin" />
 

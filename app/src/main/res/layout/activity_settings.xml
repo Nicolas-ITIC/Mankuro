@@ -5,7 +5,6 @@
     android:id="@+id/scrollSettings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     android:fillViewport="true">
 
     <LinearLayout
@@ -17,10 +16,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/btnBack"
@@ -38,30 +37,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="@string/settingsText"
-                android:textColor="@color/on_surface"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+                android:textAppearance="@style/TextAppearance.Mankuro.ScreenTitle" />
         </LinearLayout>
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:letterSpacing="0.08"
             android:text="@string/profile_settings"
-            android:textColor="@color/on_surface_variant"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textAppearance="@style/TextAppearance.Mankuro.SectionHeader" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardProfile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/surface"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="0dp"
-            app:strokeColor="@color/mankuro_border"
-            app:strokeWidth="1dp">
+            android:layout_height="wrap_content">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -84,9 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/mankurouser"
-                    android:textColor="@color/on_surface"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.Mankuro.Label"
                     app:layout_constraintBottom_toTopOf="@id/tvUserEmail"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/ivAvatar"
@@ -99,8 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/mail_example_profile"
-                    android:textColor="@color/on_surface_variant"
-                    android:textSize="13sp"
+                    android:textAppearance="@style/TextAppearance.Mankuro.Secondary"
                     app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/ivAvatar"
@@ -114,21 +101,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp"
-            android:letterSpacing="0.08"
             android:text="@string/preferences"
-            android:textColor="@color/on_surface_variant"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textAppearance="@style/TextAppearance.Mankuro.SectionHeader" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardPreferences"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/surface"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="0dp"
-            app:strokeColor="@color/mankuro_border"
-            app:strokeWidth="1dp">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -137,19 +116,16 @@
                 android:paddingVertical="4dp">
 
                 <LinearLayout
+                    style="@style/Widget.Mankuro.SettingsRow"
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="16dp">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/notifications"
-                        android:textColor="@color/on_surface"
-                        android:textSize="15sp" />
+                        android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/switchNotifications"
@@ -161,24 +137,21 @@
                 </LinearLayout>
 
                 <View
+                    style="@style/Widget.Mankuro.Divider"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/mankuro_border" />
+                    android:layout_height="1dp" />
 
                 <LinearLayout
+                    style="@style/Widget.Mankuro.SettingsRow"
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="16dp">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/tema_oscuro"
-                        android:textColor="@color/on_surface"
-                        android:textSize="15sp" />
+                        android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/switchTheme"
@@ -190,24 +163,21 @@
                 </LinearLayout>
 
                 <View
+                    style="@style/Widget.Mankuro.Divider"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/mankuro_border" />
+                    android:layout_height="1dp" />
 
                 <LinearLayout
+                    style="@style/Widget.Mankuro.SettingsRow"
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="16dp">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/allow_nsfw"
-                        android:textColor="@color/on_surface"
-                        android:textSize="15sp" />
+                        android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/switchNsfw"
@@ -219,64 +189,54 @@
                 </LinearLayout>
 
                 <View
+                    style="@style/Widget.Mankuro.Divider"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/mankuro_border" />
+                    android:layout_height="1dp" />
 
                 <LinearLayout
                     android:id="@+id/rowLanguage"
+                    style="@style/Widget.Mankuro.SettingsRow.Clickable"
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="16dp">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/language"
-                        android:textColor="@color/on_surface"
-                        android:textSize="15sp" />
+                        android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
                     <TextView
                         android:id="@+id/tvCurrentLanguage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/language_selector"
-                        android:textColor="@color/on_surface_variant"
-                        android:textSize="14sp" />
+                        android:textAppearance="@style/TextAppearance.Mankuro.Secondary" />
                 </LinearLayout>
 
                 <View
+                    style="@style/Widget.Mankuro.Divider"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/mankuro_border" />
+                    android:layout_height="1dp" />
 
                 <LinearLayout
                     android:id="@+id/rowAccessibility"
+                    style="@style/Widget.Mankuro.SettingsRow.Clickable"
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="16dp">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/accessibility_settings"
-                        android:textColor="@color/on_surface"
-                        android:textSize="15sp" />
+                        android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/configure"
-                        android:textColor="@color/on_surface_variant"
-                        android:textSize="14sp" />
+                        android:textAppearance="@style/TextAppearance.Mankuro.Secondary" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -287,64 +247,45 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp"
-            android:letterSpacing="0.08"
             android:text="@string/information_app"
-            android:textColor="@color/on_surface_variant"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textAppearance="@style/TextAppearance.Mankuro.SectionHeader" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardInfo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/surface"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="0dp"
-            app:strokeColor="@color/mankuro_border"
-            app:strokeWidth="1dp">
+            android:layout_height="wrap_content">
 
             <LinearLayout
+                style="@style/Widget.Mankuro.SettingsRow"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingHorizontal="16dp">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/version"
-                    android:textColor="@color/on_surface"
-                    android:textSize="15sp" />
+                    android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
                 <TextView
                     android:id="@+id/tvAppVersion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/version_app"
-                    android:textColor="@color/on_surface_variant"
-                    android:textSize="14sp" />
+                    android:textAppearance="@style/TextAppearance.Mankuro.Secondary" />
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="32dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogout"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            style="@style/Widget.Mankuro.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:layout_marginBottom="16dp"
-            android:text="@string/logout"
-            android:textColor="@color/mankuro_accent"
-            android:textSize="15sp"
-            app:cornerRadius="14dp"
-            app:strokeColor="@color/mankuro_accent"
-            app:strokeWidth="1dp" />
+            android:text="@string/logout" />
 
     </LinearLayout>
 </ScrollView>

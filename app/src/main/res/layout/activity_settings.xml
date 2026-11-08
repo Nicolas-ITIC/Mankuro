@@ -27,7 +27,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/volver"
+                android:contentDescription="@string/back_accessibility"
                 android:padding="8dp"
                 android:src="@drawable/abc_ic_ab_back_material"
                 app:tint="@color/on_surface" />
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:letterSpacing="0.08"
-            android:text="@string/perfil"
+            android:text="@string/profile_settings"
             android:textColor="@color/on_surface_variant"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -98,7 +98,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="@string/usuario_mankuro_com"
+                    android:text="@string/mail_example_profile"
                     android:textColor="@color/on_surface_variant"
                     android:textSize="13sp"
                     app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
@@ -115,7 +115,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp"
             android:letterSpacing="0.08"
-            android:text="@string/preferencias"
+            android:text="@string/preferences"
             android:textColor="@color/on_surface_variant"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -147,7 +147,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/notificaciones"
+                        android:text="@string/notifications"
                         android:textColor="@color/on_surface"
                         android:textSize="15sp" />
 
@@ -205,7 +205,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/permitir_contenido_nsfw_18"
+                        android:text="@string/allow_nsfw"
                         android:textColor="@color/on_surface"
                         android:textSize="15sp" />
 
@@ -236,7 +236,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/idioma"
+                        android:text="@string/language"
                         android:textColor="@color/on_surface"
                         android:textSize="15sp" />
 
@@ -244,7 +244,7 @@
                         android:id="@+id/tvCurrentLanguage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/espa_ol"
+                        android:text="@string/language_selector"
                         android:textColor="@color/on_surface_variant"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -267,14 +267,14 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Accesibilidad"
+                        android:text="@string/accessibility_settings"
                         android:textColor="@color/on_surface"
                         android:textSize="15sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Configurar  ›"
+                        android:text="@string/configure"
                         android:textColor="@color/on_surface_variant"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -288,7 +288,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp"
             android:letterSpacing="0.08"
-            android:text="@string/informacion"
+            android:text="@string/information_app"
             android:textColor="@color/on_surface_variant"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -322,7 +322,7 @@
                     android:id="@+id/tvAppVersion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="v1.0.0"
+                    android:text="@string/version_app"
                     android:textColor="@color/on_surface_variant"
                     android:textSize="14sp" />
             </LinearLayout>

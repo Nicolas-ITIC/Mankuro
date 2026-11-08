@@ -10,6 +10,7 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="100dp"
+        android:contentDescription="@string/image_desc_chibi_wave"
         android:src="@drawable/img_1"
         app:layout_constraintBottom_toTopOf="@id/cardLogin"
         app:layout_constraintEnd_toEndOf="@id/cardLogin"
@@ -38,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¡Bienvenido amigo!"
+                android:text="@string/bienvenido_amigo"
                 android:textAlignment="center"
                 android:textColor="@color/on_surface"
                 android:textSize="36sp"
@@ -49,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Email"
+                android:text="@string/email_login"
                 android:textColor="@color/on_surface"
                 android:textSize="15sp" />
 
@@ -78,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Contraseña"
+                android:text="@string/password_login"
                 android:textColor="@color/on_surface"
                 android:textSize="15sp" />
 
@@ -87,7 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:hint="••••••••"
+                android:hint="@string/hidePass"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
@@ -109,7 +110,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Iniciar sesión"
+                android:text="@string/btn_login"
                 android:textColor="@color/on_primary"
                 app:backgroundTint="@color/primary"
                 app:cornerRadius="12dp" />
@@ -122,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="¿Olvidaste tu contraseña?"
+        android:text="@string/forgot_password"
         android:textColor="@color/mankuro_text_secondary"
         app:layout_constraintEnd_toEndOf="@id/cardLogin"
         app:layout_constraintTop_toBottomOf="@id/cardLogin"
@@ -132,7 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="¿No tienes cuenta? Registrate  |"
+        android:text="@string/dont_have_account"
         android:textColor="@color/mankuro_text_secondary"
         app:layout_constraintStart_toStartOf="@id/cardLogin"
         app:layout_constraintTop_toBottomOf="@id/cardLogin" />

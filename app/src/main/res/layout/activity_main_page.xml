@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -20,10 +21,10 @@
             android:layout_height="48dp"
             android:src="@drawable/three_bars"
             android:contentDescription="@string/three_bars"
-            android:tint="@color/on_background"
             android:clickable="true"
             android:focusable="true"
-            android:padding="2dp" />
+            android:padding="2dp"
+            app:tint="@color/on_background" />
 
         <View
             android:layout_width="0dp"
@@ -37,10 +38,10 @@
             android:layout_height="48dp"
             android:src="@drawable/logout"
             android:contentDescription="@string/log_out"
-            android:tint="@color/on_background"
             android:clickable="true"
             android:focusable="true"
-            android:padding="2dp" />
+            android:padding="2dp"
+            app:tint="@color/on_background" />
 
     </LinearLayout>
 
@@ -110,10 +111,10 @@
                 android:layout_height="24dp"
                 android:src="@drawable/library"
                 android:contentDescription="@string/nav_library_desc"
-                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
-                android:padding="2dp" />
+                android:padding="2dp"
+                app:tint="@color/on_background" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -141,10 +142,10 @@
                 android:layout_height="24dp"
                 android:src="@drawable/search"
                 android:contentDescription="@string/nav_explore_desc"
-                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
-                android:padding="2dp" />
+                android:padding="2dp"
+                app:tint="@color/on_background" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -172,10 +173,10 @@
                 android:layout_height="24dp"
                 android:src="@drawable/community"
                 android:contentDescription="@string/nav_community_desc"
-                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
-                android:padding="2dp" />
+                android:padding="2dp"
+                app:tint="@color/on_background" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -203,10 +204,10 @@
                 android:layout_height="24dp"
                 android:src="@drawable/profile"
                 android:contentDescription="@string/nav_profile_desc"
-                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
-                android:padding="2dp" />
+                android:padding="2dp"
+                app:tint="@color/on_background" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -234,10 +235,10 @@
                 android:layout_height="24dp"
                 android:src="@drawable/settings"
                 android:contentDescription="@string/nav_settings_desc"
-                android:tint="@color/on_background"
                 android:clickable="true"
                 android:focusable="true"
-                android:padding="2dp" />
+                android:padding="2dp"
+                app:tint="@color/on_background" />
 
             <TextView
                 android:layout_width="wrap_content"

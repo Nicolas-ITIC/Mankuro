@@ -26,7 +26,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/volver"
+                android:contentDescription="@string/back_accessibility"
                 android:padding="8dp"
                 android:src="@drawable/abc_ic_ab_back_material"
                 app:tint="@color/on_surface" />
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="@string/accesibilidad"
+                android:text="@string/accessibility"
                 android:textColor="@color/on_surface"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:letterSpacing="0.08"
-            android:text="@string/visi_n_y_lectura"
+            android:text="@string/vision_and_reading"
             android:textColor="@color/mankuro_text_secondary"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -84,14 +84,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/tamano_de_texto"
+                            android:text="@string/text_size"
                             android:textColor="@color/on_surface"
                             android:textSize="15sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/ajusta_el_tamano_de_la_fuente"
+                            android:text="@string/adjust_font_size"
                             android:textColor="@color/mankuro_text_secondary"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -100,7 +100,7 @@
                         android:id="@+id/tvCurrentTextSize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/normal"
+                        android:text="@string/font_size_state"
                         android:textColor="@color/mankuro_text_secondary"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -126,14 +126,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/texto_de_alto_contraste"
+                            android:text="@string/high_contrast_text"
                             android:textColor="@color/on_surface"
                             android:textSize="15sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/destaca_bordes_y_colores"
+                            android:text="@string/highlight_borders_and_colors"
                             android:textColor="@color/mankuro_text_secondary"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -156,7 +156,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp"
             android:letterSpacing="0.08"
-            android:text="@string/interacci_n_y_movimiento"
+            android:text="@string/interaction_and_movement"
             android:textColor="@color/mankuro_text_secondary"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -192,14 +192,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/reducir_animaciones"
+                            android:text="@string/reduce_animations"
                             android:textColor="@color/on_surface"
                             android:textSize="15sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/transiciones_m_s_r_pidas_y_simples"
+                            android:text="@string/desc_reduce_animations"
                             android:textColor="@color/mankuro_text_secondary"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -234,14 +234,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/vibraci_n_al_pulsar"
+                            android:text="@string/vibration_when_pressed"
                             android:textColor="@color/on_surface"
                             android:textSize="15sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/respuesta_tactil_en_botones"
+                            android:text="@string/desc_vibration_when_pressed"
                             android:textColor="@color/mankuro_text_secondary"
                             android:textSize="12sp" />
                     </LinearLayout>

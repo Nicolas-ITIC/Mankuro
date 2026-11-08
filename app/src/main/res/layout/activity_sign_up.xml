@@ -12,6 +12,7 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:contentDescription="@string/desc_img_chibi_sign_up"
         android:src="@drawable/img_2"
         app:layout_constraintBottom_toTopOf="@id/cardLogin"
         app:layout_constraintEnd_toEndOf="@id/cardLogin"
@@ -41,7 +42,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/crear_cuenta"
+                android:text="@string/create_account_sing_up"
                 android:textAlignment="center"
                 android:textColor="@color/on_surface"
                 android:textSize="36sp"
@@ -52,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/nombre"
+                android:text="@string/name_sign_up"
                 android:textColor="@color/on_surface"
                 android:textSize="15sp" />
 
@@ -81,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/email"
+                android:text="@string/email_sign_up"
                 android:textColor="@color/on_surface"
                 android:textSize="15sp" />
 
@@ -110,7 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/contrase_a"
+                android:text="@string/password_sign_up"
                 android:textColor="@color/on_surface"
                 android:textSize="15sp" />
 
@@ -141,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/confirmar_contrase_a"
+                android:text="@string/password_confirm_sign_up"
                 android:textColor="@color/on_surface"
                 android:textSize="15sp" />
 
@@ -172,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/crearCuenta"
+                android:text="@string/create_account_btn"
                 android:textColor="@color/on_primary"
                 app:backgroundTint="@color/primary"
                 app:cornerRadius="12dp" />
@@ -186,7 +187,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/ya_tienes_cuenta_inicia_sesi_n"
+        android:text="@string/have_account"
         android:textColor="@color/mankuro_text_secondary"
         app:layout_constraintEnd_toEndOf="@id/cardLogin"
         app:layout_constraintTop_toBottomOf="@id/cardLogin" />

@@ -1,157 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
+    android:fillViewport="true"
     tools:context=".Mankuro.signUpActivity">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:contentDescription="@string/desc_img_chibi_sign_up"
-        android:src="@drawable/img_2"
-        app:layout_constraintBottom_toTopOf="@id/cardLogin"
-        app:layout_constraintEnd_toEndOf="@id/cardLogin"
-        app:layout_constraintStart_toStartOf="@id/cardLogin" />
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardLogin"
-        style="@style/Widget.Mankuro.Card.Large"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardPreventCornerOverlap="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="24dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/desc_img_chibi_sign_up"
+            android:src="@drawable/img_chibi_sign_up"
+            app:layout_constraintBottom_toTopOf="@id/cardLogin"
+            app:layout_constraintEnd_toEndOf="@id/cardLogin"
+            app:layout_constraintStart_toStartOf="@id/cardLogin" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLogin"
+            style="@style/Widget.Mankuro.Card.Large"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="24dp">
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/create_account_sing_up"
-                android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.Mankuro.Headline" />
-
-            <TextView
-                android:id="@+id/textFullName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/name_sign_up"
-                android:textAppearance="@style/TextAppearance.Mankuro.Label" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilFullName"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp">
+                android:orientation="vertical"
+                android:padding="24dp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etFullName"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_account_sing_up"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.Mankuro.Headline" />
+
+                <TextView
+                    android:id="@+id/textFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/name_sign_up"
+                    android:textAppearance="@style/TextAppearance.Mankuro.Label" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilFullName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName" />
+                    android:layout_marginTop="6dp">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
 
-            <TextView
-                android:id="@+id/textEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/email_sign_up"
-                android:textAppearance="@style/TextAppearance.Mankuro.Label" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp">
+                <TextView
+                    android:id="@+id/textEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/email_sign_up"
+                    android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etEmail"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress" />
+                    android:layout_marginTop="6dp">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
 
-            <TextView
-                android:id="@+id/textPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/password_sign_up"
-                android:textAppearance="@style/TextAppearance.Mankuro.Label" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:hint="••••••••"
-                app:endIconMode="password_toggle">
+                <TextView
+                    android:id="@+id/textPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/password_sign_up"
+                    android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etPassword"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
+                    android:layout_marginTop="6dp"
+                    android:hint="••••••••"
+                    app:endIconMode="password_toggle">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
 
-            <TextView
-                android:id="@+id/textConfirmPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/password_confirm_sign_up"
-                android:textAppearance="@style/TextAppearance.Mankuro.Label" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilConfirmPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:hint="••••••••"
-                app:endIconMode="password_toggle">
+                <TextView
+                    android:id="@+id/textConfirmPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/password_confirm_sign_up"
+                    android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etConfirmPassword"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilConfirmPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
+                    android:layout_marginTop="6dp"
+                    android:hint="••••••••"
+                    app:endIconMode="password_toggle">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/create_account_btn" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-        </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/create_account_btn" />
 
-    </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvGoToLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/have_account"
-        android:textAppearance="@style/TextAppearance.Mankuro.Secondary"
-        app:layout_constraintEnd_toEndOf="@id/cardLogin"
-        app:layout_constraintTop_toBottomOf="@id/cardLogin" />
+        </com.google.android.material.card.MaterialCardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tvGoToLogin"
+            style="@style/Widget.Mankuro.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/have_account"
+            app:layout_constraintEnd_toEndOf="@id/cardLogin"
+            app:layout_constraintStart_toStartOf="@id/cardLogin"
+            app:layout_constraintTop_toBottomOf="@id/cardLogin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

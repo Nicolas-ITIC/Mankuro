@@ -49,7 +49,7 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Mankuro.MainPageActivity"
-            android:exported="false"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize" />
     </application>
 

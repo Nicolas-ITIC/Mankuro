@@ -56,7 +56,7 @@
     <!-- =====================================================
          CAMPOS DE TEXTO (por defecto vía themes.xml: textInputStyle)
          ===================================================== -->
-
+    <!-- Base widget style to avoid implicit AAPT parent resolution issues -->
     <style name="Widget.Mankuro" parent="" />
 
     <style name="Widget.Mankuro.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">

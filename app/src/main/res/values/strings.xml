@@ -30,6 +30,7 @@
     <string name="vibration_when_pressed">Vibración al pulsar</string>
     <string name="desc_vibration_when_pressed">Respuesta táctil en botones</string>
     <string name="font_size_state">Normal ›</string>
+    <string name="font_size_state_format">%1$s ›</string>
     <string name="arrow_back">Ir atrás</string>
     <!-- MAIN PAGE -->
 
@@ -59,6 +60,12 @@
     <!-- Library -->
     <string name="library_title">Biblioteca</string>
     <string name="library_filters">Filtros biblioteca</string>
+    <string name="library_cover_desc">Descripcion imagen cover</string>
+    <string name="library_sample_title">Solo Leveling</string>
+    <string name="library_sample_type">Manhwa</string>
+    <string name="library_sample_progress">Capítulo 25 leídos</string>
+    <string name="library_rating_label">Nota</string>
+    <string name="library_sample_rating">9.2</string>
 
     <!-- Book detail -->
 

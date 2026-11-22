@@ -6,13 +6,14 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.nicopaul.mankuro.Mankuro.MainPageActivity
 
 class SplashActivity : AppCompatActivity() {
 
     private val handler = Handler(Looper.getMainLooper())
 
     private val openMainActivity = Runnable {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, MainPageActivity::class.java))
         this.overridePendingTransition(
             android.R.anim.fade_in,
             android.R.anim.fade_out

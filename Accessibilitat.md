@@ -83,10 +83,10 @@ Durant el desenvolupament vam trobar aquests errors d'accessibilitat i els vam s
 
 > Completar amb el que s'hagi fet realment i afegir captures.
 
-| Prova | Resultat |
-|---|---|
-| Mida de lletra del sistema al màxim |<img width="292" height="517" alt="image" src="https://github.com/user-attachments/assets/75597a82-bfd1-482d-b433-ce376521d684" />
-/>
-|
-| Tema d'alt contrast comparat amb el normal | <img width="286" height="435" alt="image" src="https://github.com/user-attachments/assets/568c4734-d272-47e9-8459-d28ed888a296" />
-|      |            |
+| Prova | Abans | Després |
+| --- | --- | --- |
+| Mida de lletra del sistema al màxim | <img width="286" height="494" alt="image" src="https://github.com/user-attachments/assets/5d6be06a-3972-41f4-af5d-a5de92e2d83b" />
+ | <img width="300" height="583" alt="image" src="https://github.com/user-attachments/assets/c5b12ab3-879c-4ae9-ba4d-b3e2896e2b1f" />
+ |
+| Tema d'alt contrast comparat amb el normal | <img width="286" height="494" alt="image" src="https://github.com/user-attachments/assets/5d6be06a-3972-41f4-af5d-a5de92e2d83b" |<img width="288" height="454" alt="image" src="https://github.com/user-attachments/assets/69ad77c8-549b-49dd-9072-275e3e14aaa2" />
+ |

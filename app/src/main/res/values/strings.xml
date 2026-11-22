@@ -201,6 +201,17 @@
     <string name="version_app">v1.0.0</string>
     <string name="onboarding_desc">Descubre historias y gestiona tu biblioteca manga favorita en un solo lugar.</string>
 
+    <string name="library_cover_desc">Portada de la obra</string>
+    <string name="library_sample_title">Título de ejemplo</string>
+    <string name="library_sample_type">Manga</string>
+    <string name="library_sample_progress">Capítulos: 25 / 120</string>
+    <string name="library_rating_label">Nota</string>
+    <string name="library_sample_rating">8,5</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
     <!-- Contents descriptions -->
 

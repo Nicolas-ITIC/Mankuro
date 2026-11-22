@@ -30,6 +30,7 @@
     <string name="vibration_when_pressed">Vibración al pulsar</string>
     <string name="desc_vibration_when_pressed">Respuesta táctil en botones</string>
     <string name="font_size_state">Normal ›</string>
+    <string name="font_size_state_format">%1$s ›</string>
     <string name="arrow_back">Ir atrás</string>
     <!-- MAIN PAGE -->
 

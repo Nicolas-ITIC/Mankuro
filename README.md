@@ -88,4 +88,4 @@ Durant el desenvolupament vam trobar aquests errors d'accessibilitat i els vam s
 | Mida de lletra del sistema al màxim |<img width="289" height="317" alt="image" src="https://github.com/user-attachments/assets/3cd776c5-0462-4c94-ba5a-80f2f1a0dead" />
 |
 | Tema d'alt contrast comparat amb el normal | <img width="286" height="435" alt="image" src="https://github.com/user-attachments/assets/568c4734-d272-47e9-8459-d28ed888a296" />
- |
+|

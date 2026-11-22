@@ -119,13 +119,11 @@
                             android:textAppearance="@style/TextAppearance.Mankuro.Caption" />
                     </LinearLayout>
 
-                    <androidx.appcompat.widget.SwitchCompat
+                    <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switchHighContrast"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="false"
-                        app:thumbTint="@color/white"
-                        app:trackTint="@color/primary" />
+                        />
                 </LinearLayout>
 
             </LinearLayout>
@@ -173,13 +171,11 @@
                             android:textAppearance="@style/TextAppearance.Mankuro.Caption" />
                     </LinearLayout>
 
-                    <androidx.appcompat.widget.SwitchCompat
+                    <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switchReduceMotion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="false"
-                        app:thumbTint="@color/white"
-                        app:trackTint="@color/primary" />
+                         />
                 </LinearLayout>
 
                 <View
@@ -211,13 +207,11 @@
                             android:textAppearance="@style/TextAppearance.Mankuro.Caption" />
                     </LinearLayout>
 
-                    <androidx.appcompat.widget.SwitchCompat
+                    <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switchHapticFeedback"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
-                        app:thumbTint="@color/white"
-                        app:trackTint="@color/primary" />
+                         />
                 </LinearLayout>
 
             </LinearLayout>

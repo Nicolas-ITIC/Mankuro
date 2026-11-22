@@ -209,4 +209,33 @@
 
     <!-- Contents descriptions -->
 
+    <!-- Biblioteca: lista -->
+
+    <string name="library_progress_format">Cap. %1$d / %2$d</string>
+    <string name="library_add_desc">Añadir obra</string>
+    <string name="library_item_added">Añadida: %1$s</string>
+    <string name="library_item_modified">Capítulo actualizado: %1$s</string>
+    <string name="library_item_deleted">Eliminada: %1$s</string>
+    <string name="library_delete_title">Eliminar obra</string>
+    <string name="library_delete_message">¿Eliminar «%1$s» de tu biblioteca?</string>
+    <string name="library_delete">Eliminar</string>
+
+    <!-- Explorar -->
+    <string name="explore_progress_format">%1$d capítulos</string>
+    <string name="explore_added_to_library">Añadida a tu biblioteca: %1$s</string>
+    <string name="explore_hidden">Resultado ocultado: %1$s</string>
+
+    <!-- Comunidad -->
+    <string name="community_liked_state">Te gusta</string>
+    <string name="community_not_liked_state">Sin me gusta</string>
+    <string name="community_post_added">Publicación creada</string>
+    <string name="community_comments_open">Comentarios de %1$s</string>
+    <string name="community_delete_title">Eliminar publicación</string>
+    <string name="community_delete_message">¿Eliminar esta publicación de %1$s?</string>
+    <string name="community_delete">Eliminar</string>
+    <string name="community_post_deleted">Publicación eliminada</string>
+    <string name="community_sample_date">22 nov 2026</string>
+    <string name="explore_breadcrumb_format">%1$s &gt; %2$s</string>
+
+
 </resources>

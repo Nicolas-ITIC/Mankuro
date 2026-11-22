@@ -13,10 +13,18 @@ import com.nicopaul.mankuro.MankuroFragments.LibraryFragment
 import com.nicopaul.mankuro.MankuroFragments.ProfileFragment
 import com.nicopaul.mankuro.MankuroFragments.SettingsFragment
 import com.nicopaul.mankuro.R
+import com.nicopaul.mankuro.utils.AccessibilityHelper
 
 class MainPageActivity : AppCompatActivity() {
+
+    private var initialHighContrast = false
+    private var initialTextSizeIndex = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        AccessibilityHelper.applyAccessibility(this)
         super.onCreate(savedInstanceState)
+        initialHighContrast = AccessibilityHelper.isHighContrastEnabled(this)
+        initialTextSizeIndex = AccessibilityHelper.getTextSizeIndex(this)
 
         setContentView(R.layout.activity_main_page)
 
@@ -27,6 +35,11 @@ class MainPageActivity : AppCompatActivity() {
             insets
         }
 
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.mainContent, LibraryFragment())
+                .commit()
+        }
 
 
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
@@ -51,6 +64,16 @@ class MainPageActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val currentHighContrast = AccessibilityHelper.isHighContrastEnabled(this)
+        val currentTextSizeIndex = AccessibilityHelper.getTextSizeIndex(this)
+
+        if (currentHighContrast != initialHighContrast || currentTextSizeIndex != initialTextSizeIndex) {
+            recreate()
+        }
     }
 
 }

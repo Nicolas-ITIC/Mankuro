@@ -44,17 +44,19 @@
 
     <!-- Theme de Alto Contraste -->
     <style name="Theme.Mankuro.HighContrast" parent="Theme.Mankuro">
-        <item name="android:colorBackground">#000000</item>
-        <item name="android:windowBackground">#000000</item>
-        <item name="colorSurface">#121212</item>
-        <item name="colorOnBackground">#FFFFFF</item>
-        <item name="colorOnSurface">#FFFFFF</item>
-        <item name="colorOnSurfaceVariant">#F1F5F9</item>
-        <item name="android:textColorPrimary">#FFFFFF</item>
-        <item name="android:textColorSecondary">#F1F5F9</item>
-        <item name="android:textColorHint">#E2E8F0</item>
-        <item name="colorPrimary">#A855F7</item>
-        <item name="colorSecondary">#C084FC</item>
+        <item name="android:colorBackground">@color/hc_background</item>
+        <item name="android:windowBackground">@color/hc_background</item>
+        <item name="android:statusBarColor">@color/hc_background</item>
+        <item name="android:navigationBarColor">@color/hc_background</item>
+        <item name="colorSurface">@color/hc_surface</item>
+        <item name="colorOnBackground">@color/hc_on_background</item>
+        <item name="colorOnSurface">@color/hc_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/hc_on_surface_variant</item>
+        <item name="android:textColorPrimary">@color/hc_on_surface</item>
+        <item name="android:textColorSecondary">@color/hc_on_surface_variant</item>
+        <item name="android:textColorHint">@color/hc_text_hint</item>
+        <item name="colorPrimary">@color/hc_primary</item>
+        <item name="colorSecondary">@color/hc_secondary</item>
     </style>
 
 </resources>

@@ -44,11 +44,18 @@
     <string name="welcome">Bienvenido a Mankuro</string>
 
     <!-- Navegación inferior -->
+    <string name="nav_home">Inicio</string>
     <string name="nav_library">Biblioteca</string>
     <string name="nav_explore">Explorar</string>
     <string name="nav_community">Comunidad</string>
     <string name="nav_profile">Perfil</string>
     <string name="nav_settings">Ajustes</string>
+
+    <string name="home_title">Página Principal</string>
+    <string name="home_quick_access">Acceso Rápido</string>
+    <string name="home_desc_library">Tu colección de mangas y manhwas</string>
+    <string name="home_desc_explore">Descubre nuevas obras y tendencias</string>
+    <string name="home_desc_community">Debates y opinión de usuarios</string>
 
     <!-- Descripciones accesibles -->
     <string name="nav_library_desc">Abrir biblioteca</string>
@@ -60,6 +67,7 @@
     <!-- Library -->
     <string name="library_title">Biblioteca</string>
     <string name="library_filters">Filtros biblioteca</string>
+    <string name="library_add_item">Añadir elemento</string>
     <string name="library_cover_desc">Descripcion imagen cover</string>
     <string name="library_sample_title">Solo Leveling</string>
     <string name="library_sample_type">Manhwa</string>

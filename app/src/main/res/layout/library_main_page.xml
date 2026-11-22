@@ -37,6 +37,17 @@
             android:gravity="center"/>
 
         <ImageView
+            android:id="@+id/btnLibraryAdd"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/add"
+            android:contentDescription="@string/library_add_item"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/on_background" />
+
+        <ImageView
             android:id="@+id/btnLibraryFilters"
             android:layout_width="48dp"
             android:layout_height="48dp"

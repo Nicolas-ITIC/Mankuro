@@ -9,15 +9,16 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.nicopaul.mankuro.MankuroFragments.CommunityFragment
 import com.nicopaul.mankuro.MankuroFragments.ExploreFragment
+import com.nicopaul.mankuro.MankuroFragments.HomeFragment
 import com.nicopaul.mankuro.MankuroFragments.LibraryFragment
 import com.nicopaul.mankuro.MankuroFragments.ProfileFragment
 import com.nicopaul.mankuro.MankuroFragments.SettingsFragment
 import com.nicopaul.mankuro.R
 
 class MainPageActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main_page)
 
         val mainLayout = findViewById<View>(R.id.main)
@@ -27,17 +28,16 @@ class MainPageActivity : AppCompatActivity() {
             insets
         }
 
-
-
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
 
         bottomNavigation.setOnItemSelectedListener { item ->
             val selectedFragment: Fragment? = when (item.itemId) {
+                R.id.nav_home -> HomeFragment()
                 R.id.nav_library -> LibraryFragment()
                 R.id.nav_explore -> ExploreFragment()
+                R.id.nav_community -> CommunityFragment()
                 R.id.nav_profile -> ProfileFragment()
                 R.id.nav_settings -> SettingsFragment()
-                R.id.nav_community -> CommunityFragment()
                 else -> null
             }
 
@@ -51,6 +51,15 @@ class MainPageActivity : AppCompatActivity() {
             }
         }
 
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.mainContent, HomeFragment())
+                .commit()
+        }
     }
 
+    fun selectNavigationItem(itemId: Int) {
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        bottomNavigation.selectedItemId = itemId
+    }
 }

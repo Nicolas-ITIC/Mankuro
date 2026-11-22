@@ -5,79 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background"
-    >
+    android:background="@color/background">
 
-    <!-- CABECERA SUPERIOR -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingHorizontal="16dp"
-        android:background="@color/surface">
-
-        <ImageView
-            android:id="@+id/btnMenu"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/three_bars"
-            android:contentDescription="@string/three_bars"
-            android:clickable="true"
-            android:focusable="true"
-            android:padding="2dp"
-            app:tint="@color/on_background" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
-
-        <!-- Boton para cerrar sesion -->
-        <ImageView
-            android:id="@+id/btnLogout"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/logout"
-            android:contentDescription="@string/log_out"
-            android:clickable="true"
-            android:focusable="true"
-            android:padding="2dp"
-            app:tint="@color/on_background" />
-
-    </LinearLayout>
-
-    <!-- SALUDO CENTRADO -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:background="@color/surface">
-
-        <TextView
-            android:id="@+id/txtGreeting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello"
-            android:textColor="@color/on_background"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtUsername"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome"
-            android:textColor="@color/on_surface_variant"
-            android:textSize="15sp"
-            android:layout_marginTop="4dp" />
-
-    </LinearLayout>
-
-    <!-- CONTENIDO CENTRAL VACIO -->
     <FrameLayout
         android:id="@+id/mainContent"
         android:layout_width="match_parent"
@@ -85,7 +14,6 @@
         android:layout_weight="1"
         android:background="@color/background" />
 
-    <!-- BARRA DE NAVEGACION INFERIOR -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
@@ -98,4 +26,3 @@
         app:menu="@menu/bottom_nav_menu" />
 
 </LinearLayout>
-

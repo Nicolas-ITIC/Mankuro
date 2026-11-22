@@ -127,13 +127,11 @@
                         android:text="@string/notifications"
                         android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
-                    <androidx.appcompat.widget.SwitchCompat
+                    <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switchNotifications"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
-                        app:thumbTint="@color/white"
-                        app:trackTint="@color/primary" />
+                         />
                 </LinearLayout>
 
                 <View
@@ -153,13 +151,11 @@
                         android:text="@string/tema_oscuro"
                         android:textAppearance="@style/TextAppearance.Mankuro.Label" />
 
-                    <androidx.appcompat.widget.SwitchCompat
+                    <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switchTheme"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
-                        app:thumbTint="@color/white"
-                        app:trackTint="@color/primary" />
+                         />
                 </LinearLayout>
 
                 <View
@@ -183,9 +179,7 @@
                         android:id="@+id/switchNsfw"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="false"
-                        app:thumbTint="@color/white"
-                        app:trackTint="@color/primary" />
+                         />
                 </LinearLayout>
 
                 <View

@@ -83,10 +83,11 @@ Durant el desenvolupament vam trobar aquests errors d'accessibilitat i els vam s
 
 > Completar amb el que s'hagi fet realment i afegir captures.
 
+
 | Prova | Abans | Després |
 | --- | --- | --- |
-| Mida de lletra del sistema al màxim | <img width="286" height="494" alt="image" src="https://github.com/user-attachments/assets/5d6be06a-3972-41f4-af5d-a5de92e2d83b" />
- | <img width="300" height="583" alt="image" src="https://github.com/user-attachments/assets/c5b12ab3-879c-4ae9-ba4d-b3e2896e2b1f" />
- |
-| Tema d'alt contrast comparat amb el normal | <img width="286" height="494" alt="image" src="https://github.com/user-attachments/assets/5d6be06a-3972-41f4-af5d-a5de92e2d83b" |<img width="288" height="454" alt="image" src="https://github.com/user-attachments/assets/69ad77c8-549b-49dd-9072-275e3e14aaa2" />
- |
+| Mida de lletra del sistema al màxim | ![Abans](https://github.com/user-attachments/assets/5d6be06a-3972-41f4-af5d-a5de92e2d83b) | ![Després](https://github.com/user-attachments/assets/c5b12ab3-879c-4ae9-ba4d-b3e2896e2b1f) |
+| Tema d'alt contrast comparat amb el normal | ![Abans](https://github.com/user-attachments/assets/0da5a6be-2b10-457f-b80d-0f736e64679c) | ![Després](https://github.com/user-attachments/assets/69ad77c8-549b-49dd-9072-275e3e14aaa2) |
+
+
+

@@ -235,5 +235,7 @@
     <string name="community_delete">Eliminar</string>
     <string name="community_post_deleted">Publicación eliminada</string>
     <string name="community_sample_date">22 nov 2026</string>
+    <string name="explore_breadcrumb_format">%1$s &gt; %2$s</string>
+
 
 </resources>

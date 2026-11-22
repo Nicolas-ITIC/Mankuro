@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.nicopaul.mankuro.MankuroFragments.CommunityFragment
 import com.nicopaul.mankuro.MankuroFragments.ExploreFragment
@@ -55,6 +56,8 @@ class MainPageActivity : AppCompatActivity() {
             }
 
             if (selectedFragment != null) {
+                supportFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)   // <-- línea nueva
+
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.mainContent, selectedFragment)
                     .commit()

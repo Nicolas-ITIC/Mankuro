@@ -75,6 +75,11 @@ class CommunityFragment : Fragment() {
             Log.d("CommunityFragment", message)
             Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
         }
+
+        val btnSearch = view.findViewById<View>(R.id.btnCommunitySearch)
+        btnSearch?.setOnClickListener {
+            Toast.makeText(requireContext(), "Búsqueda en la comunidad", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun getSamplePosts(): List<CommunityPost> {

@@ -12,12 +12,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nicopaul.mankuro.R
 import com.nicopaul.mankuro.adapters.LibraryAdapter
-import com.nicopaul.mankuro.models.LibraryItem
+import com.nicopaul.mankuro.models.Work
 
 class LibraryFragment : Fragment() {
 
     private lateinit var adapter: LibraryAdapter
-    private val libraryList = mutableListOf<LibraryItem>()
+    private val libraryList = mutableListOf<Work>()
     private var newItemCounter = 1
 
     override fun onCreateView(
@@ -41,8 +41,8 @@ class LibraryFragment : Fragment() {
         adapter = LibraryAdapter(
             items = libraryList,
             onItemClick = { item, position ->
-                item.progress = "Capítulo actualizado (${(10..100).random()})"
-                adapter.updateItem(position, item)
+                item.currentChapter += 1
+                adapter.updateItem(position)
 
                 val message = "Modificado elemento: ${item.title}"
                 Log.d("LibraryFragment", message)
@@ -60,12 +60,13 @@ class LibraryFragment : Fragment() {
 
         val btnAdd = view.findViewById<ImageView>(R.id.btnLibraryAdd)
         btnAdd?.setOnClickListener {
-            val newItem = LibraryItem(
+            val newItem = Work(
                 id = System.currentTimeMillis().toInt(),
                 title = "Manga de prueba #$newItemCounter",
                 type = if (newItemCounter % 2 == 0) "Manhwa" else "Manga",
-                progress = "Capítulo 1 leídos",
-                rating = "8.5"
+                currentChapter = 1,
+                totalChapters = 50,
+                rating = 8.5
             )
             newItemCounter++
 
@@ -75,16 +76,21 @@ class LibraryFragment : Fragment() {
             Log.d("LibraryFragment", message)
             Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
         }
+
+        val btnFilters = view.findViewById<ImageView>(R.id.btnLibraryFilters)
+        btnFilters?.setOnClickListener {
+            Toast.makeText(requireContext(), "Filtros de biblioteca seleccionados", Toast.LENGTH_SHORT).show()
+        }
     }
 
-    private fun getSampleData(): List<LibraryItem> {
+    private fun getSampleData(): List<Work> {
         return listOf(
-            LibraryItem(1, "Solo Leveling", "Manhwa", "Capítulo 179 leídos", "9.8"),
-            LibraryItem(2, "One Piece", "Manga", "Capítulo 1090 leídos", "9.5"),
-            LibraryItem(3, "Jujutsu Kaisen", "Manga", "Capítulo 250 leídos", "9.1"),
-            LibraryItem(4, "Tower of God", "Manhwa", "Capítulo 580 leídos", "9.3"),
-            LibraryItem(5, "Chainsaw Man", "Manga", "Capítulo 150 leídos", "8.9"),
-            LibraryItem(6, "Berserk", "Manga", "Capítulo 375 leídos", "9.9")
+            Work(1, "Solo Leveling", "Manhwa", 179, 179, 9.8),
+            Work(2, "One Piece", "Manga", 1090, 1110, 9.5),
+            Work(3, "Jujutsu Kaisen", "Manga", 250, 271, 9.1),
+            Work(4, "Tower of God", "Manhwa", 580, 600, 9.3),
+            Work(5, "Chainsaw Man", "Manga", 150, 170, 8.9),
+            Work(6, "Berserk", "Manga", 375, 375, 9.9)
         )
     }
 }

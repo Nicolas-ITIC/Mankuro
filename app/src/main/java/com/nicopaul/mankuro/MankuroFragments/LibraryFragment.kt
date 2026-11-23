@@ -5,20 +5,20 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.nicopaul.mankuro.R
 import com.nicopaul.mankuro.adapters.LibraryAdapter
-import com.nicopaul.mankuro.models.SampleData
-import com.nicopaul.mankuro.models.Work
+import com.nicopaul.mankuro.models.LibraryItem
 
 class LibraryFragment : Fragment() {
 
     private lateinit var adapter: LibraryAdapter
+    private val libraryList = mutableListOf<LibraryItem>()
+    private var newItemCounter = 1
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,58 +31,60 @@ class LibraryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        if (libraryList.isEmpty()) {
+            libraryList.addAll(getSampleData())
+        }
+
         val rvLibrary = view.findViewById<RecyclerView>(R.id.rvLibrary)
-        val fabAdd = view.findViewById<FloatingActionButton>(R.id.fabAddWork)
+        rvLibrary.layoutManager = LinearLayoutManager(requireContext())
 
         adapter = LibraryAdapter(
-            items = SampleData.libraryWorks(),
-            onItemClick = { work, position -> modifyWork(work, position) },
-            onItemLongClick = { work, position -> confirmDelete(work, position) }
+            items = libraryList,
+            onItemClick = { item, position ->
+                item.progress = "Capítulo actualizado (${(10..100).random()})"
+                adapter.updateItem(position, item)
+
+                val message = "Modificado elemento: ${item.title}"
+                Log.d("LibraryFragment", message)
+                Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+            },
+            onItemLongClick = { item, position ->
+                val message = "Eliminado elemento: ${item.title}"
+                Log.d("LibraryFragment", message)
+                Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+
+                adapter.removeItem(position)
+            }
         )
-        rvLibrary.layoutManager = LinearLayoutManager(requireContext())
         rvLibrary.adapter = adapter
 
-        fabAdd.setOnClickListener { addWork(rvLibrary) }
+        val btnAdd = view.findViewById<ImageView>(R.id.btnLibraryAdd)
+        btnAdd?.setOnClickListener {
+            val newItem = LibraryItem(
+                id = System.currentTimeMillis().toInt(),
+                title = "Manga de prueba #$newItemCounter",
+                type = if (newItemCounter % 2 == 0) "Manhwa" else "Manga",
+                progress = "Capítulo 1 leídos",
+                rating = "8.5"
+            )
+            newItemCounter++
+
+            adapter.addItem(newItem)
+
+            val message = "Añadido elemento: ${newItem.title}"
+            Log.d("LibraryFragment", message)
+            Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+        }
     }
 
-    // AÑADIR (botón flotante)
-    private fun addWork(rvLibrary: RecyclerView) {
-        val work = SampleData.newWork()
-        adapter.addItem(work)
-        rvLibrary.scrollToPosition(0)
-        Log.d(TAG, "Añadida: ${work.title}")
-        Toast.makeText(
-            requireContext(), getString(R.string.library_item_added, work.title), Toast.LENGTH_SHORT
-        ).show()
-    }
-
-    // MODIFICAR (al tocar una fila: avanza un capítulo)
-    private fun modifyWork(work: Work, position: Int) {
-        if (work.currentChapter < work.totalChapters) work.currentChapter++
-        adapter.updateItem(position)
-        Log.d(TAG, "Modificada: ${work.title} -> capítulo ${work.currentChapter}")
-        Toast.makeText(
-            requireContext(), getString(R.string.library_item_modified, work.title), Toast.LENGTH_SHORT
-        ).show()
-    }
-
-    // ELIMINAR (al mantener pulsada una fila, con confirmación)
-    private fun confirmDelete(work: Work, position: Int) {
-        MaterialAlertDialogBuilder(requireContext())
-            .setTitle(R.string.library_delete_title)
-            .setMessage(getString(R.string.library_delete_message, work.title))
-            .setPositiveButton(R.string.library_delete) { _, _ ->
-                adapter.removeItem(position)
-                Log.d(TAG, "Eliminada: ${work.title}")
-                Toast.makeText(
-                    requireContext(), getString(R.string.library_item_deleted, work.title), Toast.LENGTH_SHORT
-                ).show()
-            }
-            .setNegativeButton(android.R.string.cancel, null)
-            .show()
-    }
-
-    companion object {
-        private const val TAG = "LibraryFragment"
+    private fun getSampleData(): List<LibraryItem> {
+        return listOf(
+            LibraryItem(1, "Solo Leveling", "Manhwa", "Capítulo 179 leídos", "9.8"),
+            LibraryItem(2, "One Piece", "Manga", "Capítulo 1090 leídos", "9.5"),
+            LibraryItem(3, "Jujutsu Kaisen", "Manga", "Capítulo 250 leídos", "9.1"),
+            LibraryItem(4, "Tower of God", "Manhwa", "Capítulo 580 leídos", "9.3"),
+            LibraryItem(5, "Chainsaw Man", "Manga", "Capítulo 150 leídos", "8.9"),
+            LibraryItem(6, "Berserk", "Manga", "Capítulo 375 leídos", "9.9")
+        )
     }
 }

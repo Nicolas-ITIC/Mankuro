@@ -11,14 +11,33 @@
     android:background="@color/background">
 
     <!-- Usuario de la publicación -->
-    <TextView
-        android:id="@+id/tvPostAuthor"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/community_sample_author"
-        android:textColor="@color/secondary"
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPostAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/community_sample_author"
+            android:textColor="@color/secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Fecha: se rellena con la función de extensión Date.toDisplayString() -->
+        <TextView
+            android:id="@+id/tvPostDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/community_sample_date"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
     <!-- Texto del post -->
     <TextView
@@ -45,17 +64,21 @@
     <!-- Me gusta y comentarios -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/ivPostLike"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/heart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
             android:contentDescription="@string/community_like"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/heart"
             app:tint="@color/mankuro_accent" />
 
         <TextView
@@ -73,10 +96,14 @@
 
         <ImageView
             android:id="@+id/ivPostComments"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/comment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
             android:contentDescription="@string/community_comments"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/comment"
             app:tint="@color/on_surface_variant" />
 
         <TextView

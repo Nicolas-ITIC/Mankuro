@@ -44,7 +44,7 @@ class logInActivity : AppCompatActivity() {
         val btnRegister = findViewById<Button>(R.id.btnRegister)
         btnRegister?.setOnClickListener {
             Toast.makeText(this, "Registro de usuario", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, signUpActivity::class.java))
+            startActivity(Intent(this, SignUpActivity::class.java))
         }
     }
 }

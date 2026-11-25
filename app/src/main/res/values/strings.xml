@@ -182,7 +182,7 @@
     <string name="profile_sample_average_rating">8,6</string>
     <string name="profile_rating_scale">Sobre 10 puntos</string>
     <string name="create_account_sing_up">Crear cuenta</string>
-    <string name="name_sign_up">Nombre</string>
+    <string name="name_sign_up">Nombre de usuario</string>
     <string name="email_sign_up">Email</string>
     <string name="password_sign_up">Contraseña</string>
     <string name="password_confirm_sign_up">Confirmar contraseña</string>

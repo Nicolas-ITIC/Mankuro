@@ -75,7 +75,7 @@ class SignUpActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
 
-                startActivity(Intent(this, MainPageActivity::class.java))
+                startActivity(Intent(this, logInActivity::class.java))
                 finish()
             }
         }

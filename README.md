@@ -25,10 +25,10 @@ App Android de biblioteca de mangas i manhwas (Institut TIC de Barcelona).
 
 | Què demana l'activitat | On està explicat |
 |---|---|
-| Separació de responsabilitats (patró MVVM) | [ArquitecturaMVVM.md](ArquitecturaMVVM.md), resum i apartat 1 |
-| Ús de `ViewModel` i `LiveData` (observabilitat) | [ArquitecturaMVVM.md](ArquitecturaMVVM.md), apartat 1 |
-| Recodificació i validació del Login (`LogInViewModel`) | [ArquitecturaMVVM.md](ArquitecturaMVVM.md), apartat 2 |
-| Recodificació i validació del Registre (`SignUpViewModel`) | [ArquitecturaMVVM.md](ArquitecturaMVVM.md), apartat 3 |
+| Separació de responsabilitats (patró MVVM) | [LogInISignUp.md](LogInISignUp.md), resum i apartat 1 |
+| Ús de `ViewModel` i `LiveData` (observabilitat) | [LogInISignUp.md](LogInISignUp.md), apartat 1 |
+| Recodificació i validació del Login (`LogInViewModel`) | [LogInISignUp.md](LogInISignUp.md), apartat 2 |
+| Recodificació i validació del Registre (`SignUpViewModel`) | [LogInISignUp.md](LogInISignUp.md), apartat 3 |
 
 ## Resum
 

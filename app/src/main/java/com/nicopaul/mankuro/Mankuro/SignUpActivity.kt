@@ -97,6 +97,7 @@ class SignUpActivity : AppCompatActivity() {
         val tvGoToLogin = findViewById<Button>(R.id.tvGoToLogin)
         tvGoToLogin?.setOnClickListener {
             Toast.makeText(this, "Volviendo al inicio de sesión", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, logInActivity::class.java))
             finish()
         }
     }

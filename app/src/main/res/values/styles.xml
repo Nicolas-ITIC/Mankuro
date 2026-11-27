@@ -68,6 +68,7 @@
         <item name="hintTextColor">@color/primary</item>
         <item name="android:textColorHint">@color/on_surface_variant</item>
         <item name="endIconTint">@color/on_surface_variant</item>
+        <item name="hintEnabled">false</item>
     </style>
 
 

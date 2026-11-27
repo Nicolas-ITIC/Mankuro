@@ -32,7 +32,7 @@
 
         <activity
             android:name=".Mankuro.logInActivity"
-            android:exported="false"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Mankuro.SignUpActivity"

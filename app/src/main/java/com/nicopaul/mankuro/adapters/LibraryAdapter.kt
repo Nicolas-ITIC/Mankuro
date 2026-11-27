@@ -15,7 +15,7 @@ import java.util.Locale
  * Recibe dos "lambdas" (funciones) para avisar al Fragment cuando el usuario
  * toca una fila o la mantiene pulsada. Así el adapter no sabe nada de Toasts ni diálogos.
  */
-class LibraryAdapter(
+class   LibraryAdapter(
     private val items: MutableList<Work>,
     private val onItemClick: (Work, Int) -> Unit,
     private val onItemLongClick: (Work, Int) -> Unit
